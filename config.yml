@@ -85,6 +85,3 @@ challenge:                   # incoming challenges
   modes:                     # game modes to accept
     - casual                 # unrated games
     - rated                  # rated games - must comment if the engine doesn't try to win
-  greeting:
-    - Hello! Made by @VenujaTBS # Message to send to chat at the start of a game
-    - Good Game! Bye! :) # Message to send to chat at the end of a game
