@@ -20,6 +20,9 @@ RUN rm Cerebellum3Merge.bin.7z
 RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/590447d7a162058ed1f68270c84aac4e2f256bb1/linux64modern/stockfish_21082209_x64_modern.zip" -O chess-engine.zip
 RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/21ad356c0900c9eba9b7b1f7453f934eab80f303/linux64modern/stockfish_21092606_x64_modern.zip" -O chess-engine.zip
 RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/919da65d70f0041abbb0102133ed0abbf25b1af0/linux64modern/stockfish_21092522_x64_modern.zip" -O chess-engine.zip
+RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/ff3fa0c664a5799e5531b0908018c59633d761bf/linux64modern/stockfish_21092323_x64_modern.zip" -O chess-engine.zip
+RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/e8788d1b32c9356fa0a127952d48c3748d8ec826/linux64modern/stockfish_21092119_x64_modern.zip" -O chess-engine.zip
+
 #RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-46832cfbead3.nnue" -O nn-938525872610.nnue
 RUN 7z e chess-engine.zip && rm chess-engine.zip && mv stockfish* chess-engine
 
